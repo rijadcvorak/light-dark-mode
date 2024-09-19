@@ -21,12 +21,17 @@
   --background: #121212;
 }
 
+.links a{
+  text-decoration: none;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
+
   font-family: Gowun Batang;
   margin: 0;
   color: var(--on-background);
@@ -62,7 +67,7 @@ body {
     letter-spacing: 2px;
     padding: 25px;
     width: 100vw;
-    background: var(--primary-color);
+    background: var color(--primary-color);
   }
 
   a {
@@ -87,7 +92,6 @@ body {
   /* About Section */
   .about-container {
     display: flex;
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
   }
 
   .image-container {
@@ -96,23 +100,20 @@ body {
     padding: 10px 20px;
     margin-right: 25px;
     margin-top: 50px;
+    width: auto;
     background: var(--background);
     box-shadow: var(--box-shadow);
-    width: 100%;
-    max-width: 300px; /* Restrict max width */
   }
 
   img {
-    height: auto;
-    width: 100%; /* Responsive image size */
+    height: 300px;
+    width: 300px;
   }
 
   /* Projects Section */
   .buttons {
     margin-top: 15px;
     margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   button {
@@ -163,8 +164,7 @@ body {
   }
 
   .text-box {
-    width: 100%;
-    max-width: 700px; /* Make sure it's readable and responsive */
+    width: 40%;
     text-align: justify;
     background: rgb(0 0 0 / 50%);
     color: white;
@@ -198,6 +198,7 @@ body {
     position: fixed;
     right: 25px;
     top: 30px;
+
   }
 
   .theme-switch-wrapper span {
@@ -261,42 +262,9 @@ body {
     border-radius: 50%;
   }
 
-  /* Media Queries for Mobile */
-  @media (max-width: 768px) {
-    nav {
-      font-size: 20px;
-      padding: 20px;
-    }
-
-    h1 {
-      font-size: 60px; /* Slightly smaller on mobile */
-    }
-
-    h2 {
-      font-size: 24px; /* Adjust h2 size for smaller screens */
-    }
-
-    .about-container {
-      flex-direction: column; /* Stack items on top of each other */
-    }
-
-    .image-container {
-      margin-right: 0; /* Remove margin on smaller screens */
-      margin-bottom: 20px;
-      width: 100%;
-    }
-
-    .text-box {
-      width: 90%; /* Adjust width for mobile */
-    }
-
-    .fab {
-      font-size: 70px; /* Reduce icon size */
-    }
-
-    button {
-      margin-bottom: 10px;
-      font-size: 14px;
-    }
+  .fas {
+    font-size: 30px;
+    margin-right: 5px;
   }
+
 }
