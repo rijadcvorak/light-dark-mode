@@ -21,7 +21,7 @@
   --background: #121212;
 }
 
-.links a{
+.links a {
   text-decoration: none;
 }
 
@@ -31,7 +31,6 @@ html {
 }
 
 body {
-
   font-family: Gowun Batang;
   margin: 0;
   color: var(--on-background);
@@ -67,7 +66,7 @@ body {
     letter-spacing: 2px;
     padding: 25px;
     width: 100vw;
-    background: var color(--primary-color);
+    background: var(--primary-color);
   }
 
   a {
@@ -92,6 +91,7 @@ body {
   /* About Section */
   .about-container {
     display: flex;
+    flex-wrap: wrap; /* Allow the layout to adapt to smaller screens */
   }
 
   .image-container {
@@ -106,8 +106,8 @@ body {
   }
 
   img {
-    height: 300px;
-    width: 300px;
+    height: auto;
+    max-width: 100%; /* Make the image responsive */
   }
 
   /* Projects Section */
@@ -164,11 +164,11 @@ body {
   }
 
   .text-box {
-    width: 40%;
+    width: 100%; /* Full width on mobile */
     text-align: justify;
     background: rgb(0 0 0 / 50%);
     color: white;
-    margin: 30px;
+    margin: 30px 0;
     border-radius: 10px;
     padding: 30px;
   }
@@ -198,7 +198,6 @@ body {
     position: fixed;
     right: 25px;
     top: 30px;
-
   }
 
   .theme-switch-wrapper span {
@@ -267,4 +266,31 @@ body {
     margin-right: 5px;
   }
 
+  /* Media Queries for Mobile */
+  @media (max-width: 768px) {
+    nav {
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 60px; /* Smaller font size on mobile */
+    }
+
+    h2 {
+      font-size: 24px; /* Reduce h2 font size */
+    }
+
+    .text-box {
+      width: 90%; /* Full width on mobile */
+    }
+
+    button {
+      font-size: 13px; /* Smaller button text */
+    }
+
+    .fab {
+      font-size: 70px; /* Reduce icon size */
+    }
+  }
 }
