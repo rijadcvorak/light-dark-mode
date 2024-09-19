@@ -91,7 +91,7 @@ body {
   /* About Section */
   .about-container {
     display: flex;
-    flex-wrap: wrap; /* Allow the layout to adapt to smaller screens */
+    flex-wrap: wrap; 
   }
 
   .image-container {
@@ -107,7 +107,7 @@ body {
 
   img {
     height: auto;
-    max-width: 100%; /* Make the image responsive */
+    max-width: 100%; 
   }
 
   /* Projects Section */
@@ -164,7 +164,7 @@ body {
   }
 
   .text-box {
-    width: 100%; /* Full width on mobile */
+    width: 100%; 
     text-align: justify;
     background: rgb(0 0 0 / 50%);
     color: white;
@@ -266,7 +266,7 @@ body {
     margin-right: 5px;
   }
 
-  /* Media Queries for Mobile */
+ 
   @media (max-width: 768px) {
     nav {
       font-size: 20px;
@@ -274,23 +274,23 @@ body {
     }
 
     h1 {
-      font-size: 60px; /* Smaller font size on mobile */
+      font-size: 60px;
     }
 
     h2 {
-      font-size: 24px; /* Reduce h2 font size */
+      font-size: 24px; 
     }
 
     .text-box {
-      width: 90%; /* Full width on mobile */
+      width: 90%; 
     }
 
     button {
-      font-size: 13px; /* Smaller button text */
+      font-size: 13px; 
     }
 
     .fab {
-      font-size: 70px; /* Reduce icon size */
+      font-size: 70px; 
     }
   }
 }
